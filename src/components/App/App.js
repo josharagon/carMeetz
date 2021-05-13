@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import { slide as Menu } from 'react-burger-menu'
+
+
 
 function App() {
+
+  function showSettings(event) {
+    event.preventDefault();
+
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className='main'>
+      <nav>
+        <Menu>
+          <a id="home" className="menu-item" href="/">Home</a>
+          <a id="about" className="menu-item" href="/about">About</a>
+          <a id="contact" className="menu-item" href="/contact">Contact</a>
+          <a onClick={showSettings} className="menu-item--small" href="">Settings</a>
+        </Menu>
+        <h1>car Meetz</h1>
+      </nav>
+    </main>
   );
 }
 
