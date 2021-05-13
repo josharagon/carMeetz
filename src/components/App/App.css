@@ -7,14 +7,14 @@ nav {
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  margin: 0 20px 0 20px;
 }
 
 .bm-burger-button {
   position: fixed;
   width: 36px;
   height: 30px;
-  left: 36px;
-  top: 36px;
+  top: 20px;
 }
 
 /* Color/shape of burger icon bars */
