@@ -1,6 +1,7 @@
 import './App.css';
 import LoginButton from '../LoginButton.js'
 import LogoutButton from '../LogoutButton.js'
+import Profile from '../Profile.js'
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <h1>car Meetz</h1>
         <LoginButton />
         <LogoutButton />
+        <Profile />
       </nav>
     </main>
   );
